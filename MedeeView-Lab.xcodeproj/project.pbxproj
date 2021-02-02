@@ -1,0 +1,1485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1437A787755B7D761D316B1C /* Pods_MedeeView_Lab_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3396BBE6030A4707281F9E5E /* Pods_MedeeView_Lab_WatchKit_App.framework */; };
+		19C285D9E2AC14BEAFAB6C3B /* Pods_MedeeView_Lab_MedeeView_LabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AA77EC957E85168ABA9E8B /* Pods_MedeeView_Lab_MedeeView_LabUITests.framework */; };
+		84EC34E20E34E5216996A124 /* Pods_MedeeView_LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DF2281950DA5B6F223C996 /* Pods_MedeeView_LabTests.framework */; };
+		8A239B5325B118C7004F2113 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B5125B118C7004F2113 /* appstore.png */; };
+		8A239B5425B118C7004F2113 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B5125B118C7004F2113 /* appstore.png */; };
+		8A239B5525B118C7004F2113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B5225B118C7004F2113 /* Assets.xcassets */; };
+		8A239B5625B118C7004F2113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B5225B118C7004F2113 /* Assets.xcassets */; };
+		8A239B6225B118E6004F2113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B6125B118E6004F2113 /* Assets.xcassets */; };
+		8A239B6325B118E6004F2113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A239B6125B118E6004F2113 /* Assets.xcassets */; };
+		8A239BB025B11E9A004F2113 /* empty-blackboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A239BAF25B11E9A004F2113 /* empty-blackboard.jpg */; };
+		8A239BB725B122A7004F2113 /* FingerPulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BB625B122A7004F2113 /* FingerPulseViewController.swift */; };
+		8A239BBE25B122B5004F2113 /* FacePulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BBD25B122B5004F2113 /* FacePulseViewController.swift */; };
+		8A239BC525B122DB004F2113 /* BreathingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BC425B122DB004F2113 /* BreathingViewController.swift */; };
+		8A239BCC25B12313004F2113 /* HRVanalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BCB25B12313004F2113 /* HRVanalysisViewController.swift */; };
+		8A239BD325B1232B004F2113 /* FaceTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BD225B1232B004F2113 /* FaceTextureViewController.swift */; };
+		8A239BDA25B12357004F2113 /* EyesRegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BD925B12357004F2113 /* EyesRegionsViewController.swift */; };
+		8A239BE125B12368004F2113 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BE025B12368004F2113 /* ViewExtensions.swift */; };
+		8A239BE825B123D6004F2113 /* AVCaptureDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BE725B123D6004F2113 /* AVCaptureDevice+Extensions.swift */; };
+		8A239BF025B12465004F2113 /* PulseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BEF25B12465004F2113 /* PulseDetector.swift */; };
+		8A239BF725B12471004F2113 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BF625B12471004F2113 /* Filter.swift */; };
+		8A239BFE25B1247C004F2113 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239BFD25B1247C004F2113 /* HeartRateManager.swift */; };
+		8A239C0525B12586004F2113 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C0425B12586004F2113 /* ColorUtils.swift */; };
+		8A239C2525B12F57004F2113 /* TransformVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C2425B12F57004F2113 /* TransformVisualization.swift */; };
+		8A239C2C25B12F6F004F2113 /* ARFaceGeometry.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8A239C2B25B12F6F004F2113 /* ARFaceGeometry.obj */; };
+		8A239C3325B12F79004F2113 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A239C3225B12F79004F2113 /* Models.scnassets */; };
+		8A239C3A25B12F84004F2113 /* VideoTexturedFace.shader in Resources */ = {isa = PBXBuildFile; fileRef = 8A239C3925B12F84004F2113 /* VideoTexturedFace.shader */; };
+		8A239C4625B12FA7004F2113 /* VirtualContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C4525B12FA7004F2113 /* VirtualContent.swift */; };
+		8A239C4D25B12FC0004F2113 /* TextureFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C4C25B12FC0004F2113 /* TextureFace.swift */; };
+		8A239C5425B12FDE004F2113 /* VideoTextureFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C5325B12FDE004F2113 /* VideoTextureFace.swift */; };
+		8A239C5B25B12FF9004F2113 /* BlendShapeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C5A25B12FF9004F2113 /* BlendShapeCharacter.swift */; };
+		8A239C6225B1301B004F2113 /* ARUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C6125B1301B004F2113 /* ARUtils.swift */; };
+		8A239C6925B13048004F2113 /* FaceOcclusionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A239C6825B13048004F2113 /* FaceOcclusionOverlay.swift */; };
+		8AABB18225B0C0A3008F174A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB18125B0C0A3008F174A /* AppDelegate.swift */; };
+		8AABB18425B0C0A3008F174A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB18325B0C0A3008F174A /* SceneDelegate.swift */; };
+		8AABB18925B0C0A3008F174A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB18725B0C0A3008F174A /* Main.storyboard */; };
+		8AABB18E25B0C0A5008F174A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB18C25B0C0A5008F174A /* LaunchScreen.storyboard */; };
+		8AABB19925B0C0A5008F174A /* MedeeView_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB19825B0C0A5008F174A /* MedeeView_LabTests.swift */; };
+		8AABB1A425B0C0A5008F174A /* MedeeView_LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB1A325B0C0A5008F174A /* MedeeView_LabUITests.swift */; };
+		8AABB1A925B0C0A5008F174A /* MedeeView-Lab WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AABB1A825B0C0A5008F174A /* MedeeView-Lab WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AABB1AF25B0C0A5008F174A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB1AD25B0C0A5008F174A /* Interface.storyboard */; };
+		8AABB1B825B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8AABB1B725B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AABB1BD25B0C0A5008F174A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB1BC25B0C0A5008F174A /* InterfaceController.swift */; };
+		8AABB1BF25B0C0A5008F174A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB1BE25B0C0A5008F174A /* ExtensionDelegate.swift */; };
+		8AABB1C125B0C0A5008F174A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB1C025B0C0A5008F174A /* NotificationController.swift */; };
+		8AABB1C325B0C0A5008F174A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB1C225B0C0A5008F174A /* ComplicationController.swift */; };
+		8AABB1C525B0C0A5008F174A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB1C425B0C0A5008F174A /* Assets.xcassets */; };
+		8AABB29025B0C8DD008F174A /* FaceDetect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB28F25B0C8DD008F174A /* FaceDetect.storyboard */; };
+		8AABB29D25B0C904008F174A /* VitalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB29C25B0C904008F174A /* VitalView.storyboard */; };
+		8AABB2AA25B0C926008F174A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB2A925B0C926008F174A /* Dashboard.storyboard */; };
+		8AABB2B725B0CA2F008F174A /* FaceDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2B625B0CA2F008F174A /* FaceDetectViewController.swift */; };
+		8AABB2C325B0CA44008F174A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2C225B0CA44008F174A /* DashboardViewController.swift */; };
+		8AABB2D125B0CA94008F174A /* VitalSignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2D025B0CA94008F174A /* VitalSignsViewController.swift */; };
+		8AABB2DD25B0CACE008F174A /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2DC25B0CACE008F174A /* HeartRate.swift */; };
+		8AABB2E925B0CADD008F174A /* HeartRateVariability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2E825B0CADD008F174A /* HeartRateVariability.swift */; };
+		8AABB2F025B0CAE8008F174A /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2EF25B0CAE8008F174A /* Pulse.swift */; };
+		8AABB2F725B0CAF3008F174A /* PulseRateVariability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2F625B0CAF3008F174A /* PulseRateVariability.swift */; };
+		8AABB2FE25B0CB18008F174A /* DeepLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB2FD25B0CB18008F174A /* DeepLearning.swift */; };
+		8AABB30525B0CB24008F174A /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB30425B0CB24008F174A /* Training.swift */; };
+		8AABB30C25B0CB49008F174A /* CNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB30B25B0CB49008F174A /* CNN.swift */; };
+		8AABB31325B0CB62008F174A /* Breathing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB31225B0CB62008F174A /* Breathing.swift */; };
+		8AABB31F25B0CB84008F174A /* DeepEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB31E25B0CB84008F174A /* DeepEye.swift */; };
+		8AABB32625B0CBBC008F174A /* FaceROI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB32525B0CBBC008F174A /* FaceROI.swift */; };
+		8AABB32E25B0CBD7008F174A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB32D25B0CBD7008F174A /* PreviewView.swift */; };
+		8AABB33525B0CBEA008F174A /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AABB33425B0CBEA008F174A /* UIExtensions.swift */; };
+		8AABB35525B0D2EA008F174A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AABB35425B0D2EA008F174A /* Settings.storyboard */; };
+		95B9978D939EF1653645120B /* Pods_MedeeView_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B357916734D17DF2BE6A4CE4 /* Pods_MedeeView_Lab.framework */; };
+		9DD8D20EE01183E9853B0419 /* Pods_MedeeView_Lab_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10815BCD042CFFE3192CC586 /* Pods_MedeeView_Lab_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AABB19525B0C0A5008F174A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AABB17625B0C0A3008F174A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AABB17D25B0C0A3008F174A;
+			remoteInfo = "MedeeView-Lab";
+		};
+		8AABB1A025B0C0A5008F174A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AABB17625B0C0A3008F174A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AABB17D25B0C0A3008F174A;
+			remoteInfo = "MedeeView-Lab";
+		};
+		8AABB1AA25B0C0A5008F174A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AABB17625B0C0A3008F174A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AABB1A725B0C0A5008F174A;
+			remoteInfo = "MedeeView-Lab WatchKit App";
+		};
+		8AABB1B925B0C0A5008F174A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AABB17625B0C0A3008F174A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AABB1B625B0C0A5008F174A;
+			remoteInfo = "MedeeView-Lab WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AABB1CD25B0C0A5008F174A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AABB1B825B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB1D125B0C0A5008F174A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8AABB1A925B0C0A5008F174A /* MedeeView-Lab WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071EBA262BF0E422A1B4DA02 /* Pods-MedeeView-Lab WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab WatchKit Extension/Pods-MedeeView-Lab WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		0BC68842D339A1BA065A7285 /* Pods-MedeeView-LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-LabTests.release.xcconfig"; path = "Target Support Files/Pods-MedeeView-LabTests/Pods-MedeeView-LabTests.release.xcconfig"; sourceTree = "<group>"; };
+		10815BCD042CFFE3192CC586 /* Pods_MedeeView_Lab_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedeeView_Lab_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB6CB9D1649F790C129E37E /* Pods-MedeeView-Lab WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab WatchKit App/Pods-MedeeView-Lab WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		3396BBE6030A4707281F9E5E /* Pods_MedeeView_Lab_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedeeView_Lab_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CEDCB399D8192E0A0126B5 /* Pods-MedeeView-Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab.release.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab.release.xcconfig"; sourceTree = "<group>"; };
+		4CC454E85D3AB9CD1EB8A529 /* Pods-MedeeView-Lab-MedeeView-LabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab-MedeeView-LabUITests.release.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79C0CB89F7C6876205D62B18 /* Pods-MedeeView-Lab WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab WatchKit Extension/Pods-MedeeView-Lab WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		817CF15A1CF51D9A3FF15FAF /* Pods-MedeeView-LabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-LabTests.debug.xcconfig"; path = "Target Support Files/Pods-MedeeView-LabTests/Pods-MedeeView-LabTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83AA77EC957E85168ABA9E8B /* Pods_MedeeView_Lab_MedeeView_LabUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedeeView_Lab_MedeeView_LabUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A239B5125B118C7004F2113 /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
+		8A239B5225B118C7004F2113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A239B6125B118E6004F2113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A239BAF25B11E9A004F2113 /* empty-blackboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "empty-blackboard.jpg"; sourceTree = "<group>"; };
+		8A239BB625B122A7004F2113 /* FingerPulseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPulseViewController.swift; sourceTree = "<group>"; };
+		8A239BBD25B122B5004F2113 /* FacePulseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacePulseViewController.swift; sourceTree = "<group>"; };
+		8A239BC425B122DB004F2113 /* BreathingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingViewController.swift; sourceTree = "<group>"; };
+		8A239BCB25B12313004F2113 /* HRVanalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVanalysisViewController.swift; sourceTree = "<group>"; };
+		8A239BD225B1232B004F2113 /* FaceTextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTextureViewController.swift; sourceTree = "<group>"; };
+		8A239BD925B12357004F2113 /* EyesRegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesRegionsViewController.swift; sourceTree = "<group>"; };
+		8A239BE025B12368004F2113 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		8A239BE725B123D6004F2113 /* AVCaptureDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extensions.swift"; sourceTree = "<group>"; };
+		8A239BEF25B12465004F2113 /* PulseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseDetector.swift; sourceTree = "<group>"; };
+		8A239BF625B12471004F2113 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		8A239BFD25B1247C004F2113 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
+		8A239C0425B12586004F2113 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		8A239C2425B12F57004F2113 /* TransformVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformVisualization.swift; sourceTree = "<group>"; };
+		8A239C2B25B12F6F004F2113 /* ARFaceGeometry.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ARFaceGeometry.obj; sourceTree = "<group>"; };
+		8A239C3225B12F79004F2113 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		8A239C3925B12F84004F2113 /* VideoTexturedFace.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VideoTexturedFace.shader; sourceTree = "<group>"; };
+		8A239C4525B12FA7004F2113 /* VirtualContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContent.swift; sourceTree = "<group>"; };
+		8A239C4C25B12FC0004F2113 /* TextureFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureFace.swift; sourceTree = "<group>"; };
+		8A239C5325B12FDE004F2113 /* VideoTextureFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTextureFace.swift; sourceTree = "<group>"; };
+		8A239C5A25B12FF9004F2113 /* BlendShapeCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendShapeCharacter.swift; sourceTree = "<group>"; };
+		8A239C6125B1301B004F2113 /* ARUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUtils.swift; sourceTree = "<group>"; };
+		8A239C6825B13048004F2113 /* FaceOcclusionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceOcclusionOverlay.swift; sourceTree = "<group>"; };
+		8AABB17E25B0C0A3008F174A /* MedeeView-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedeeView-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AABB18125B0C0A3008F174A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AABB18325B0C0A3008F174A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AABB18825B0C0A3008F174A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AABB18D25B0C0A5008F174A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AABB18F25B0C0A5008F174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AABB19425B0C0A5008F174A /* MedeeView-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MedeeView-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AABB19825B0C0A5008F174A /* MedeeView_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedeeView_LabTests.swift; sourceTree = "<group>"; };
+		8AABB19A25B0C0A5008F174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AABB19F25B0C0A5008F174A /* MedeeView-LabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MedeeView-LabUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AABB1A325B0C0A5008F174A /* MedeeView_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedeeView_LabUITests.swift; sourceTree = "<group>"; };
+		8AABB1A525B0C0A5008F174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AABB1A825B0C0A5008F174A /* MedeeView-Lab WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedeeView-Lab WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AABB1AE25B0C0A5008F174A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8AABB1B225B0C0A5008F174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AABB1B725B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MedeeView-Lab WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AABB1BC25B0C0A5008F174A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8AABB1BE25B0C0A5008F174A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8AABB1C025B0C0A5008F174A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8AABB1C225B0C0A5008F174A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8AABB1C425B0C0A5008F174A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AABB1C625B0C0A5008F174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AABB1C725B0C0A5008F174A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8AABB28F25B0C8DD008F174A /* FaceDetect.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceDetect.storyboard; sourceTree = "<group>"; };
+		8AABB29C25B0C904008F174A /* VitalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VitalView.storyboard; sourceTree = "<group>"; };
+		8AABB2A925B0C926008F174A /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		8AABB2B625B0CA2F008F174A /* FaceDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FaceDetectViewController.swift; path = "MedeeView-Lab/Modules/Controllers/FaceDetect/FaceDetectViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8AABB2C225B0CA44008F174A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		8AABB2D025B0CA94008F174A /* VitalSignsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalSignsViewController.swift; sourceTree = "<group>"; };
+		8AABB2DC25B0CACE008F174A /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		8AABB2E825B0CADD008F174A /* HeartRateVariability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateVariability.swift; sourceTree = "<group>"; };
+		8AABB2EF25B0CAE8008F174A /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
+		8AABB2F625B0CAF3008F174A /* PulseRateVariability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseRateVariability.swift; sourceTree = "<group>"; };
+		8AABB2FD25B0CB18008F174A /* DeepLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLearning.swift; sourceTree = "<group>"; };
+		8AABB30425B0CB24008F174A /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		8AABB30B25B0CB49008F174A /* CNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNN.swift; sourceTree = "<group>"; };
+		8AABB31225B0CB62008F174A /* Breathing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breathing.swift; sourceTree = "<group>"; };
+		8AABB31E25B0CB84008F174A /* DeepEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepEye.swift; sourceTree = "<group>"; };
+		8AABB32525B0CBBC008F174A /* FaceROI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceROI.swift; sourceTree = "<group>"; };
+		8AABB32D25B0CBD7008F174A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		8AABB33425B0CBEA008F174A /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		8AABB35425B0D2EA008F174A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		9497AEA001466B29AD23A512 /* Pods-MedeeView-Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab.debug.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab.debug.xcconfig"; sourceTree = "<group>"; };
+		980DD33A4B0A168C91F83F17 /* Pods-MedeeView-Lab-MedeeView-LabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab-MedeeView-LabUITests.debug.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B357916734D17DF2BE6A4CE4 /* Pods_MedeeView_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedeeView_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C979D888CD3B265E47A0CE2B /* Pods-MedeeView-Lab WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedeeView-Lab WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-MedeeView-Lab WatchKit App/Pods-MedeeView-Lab WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		D2DF2281950DA5B6F223C996 /* Pods_MedeeView_LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedeeView_LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70EAFE6093B68553B0834FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1437A787755B7D761D316B1C /* Pods_MedeeView_Lab_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB17B25B0C0A3008F174A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B9978D939EF1653645120B /* Pods_MedeeView_Lab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19125B0C0A5008F174A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EC34E20E34E5216996A124 /* Pods_MedeeView_LabTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19C25B0C0A5008F174A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C285D9E2AC14BEAFAB6C3B /* Pods_MedeeView_Lab_MedeeView_LabUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB1B425B0C0A5008F174A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD8D20EE01183E9853B0419 /* Pods_MedeeView_Lab_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47B27ABC5F26CC8732EE27F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B357916734D17DF2BE6A4CE4 /* Pods_MedeeView_Lab.framework */,
+				3396BBE6030A4707281F9E5E /* Pods_MedeeView_Lab_WatchKit_App.framework */,
+				10815BCD042CFFE3192CC586 /* Pods_MedeeView_Lab_WatchKit_Extension.framework */,
+				83AA77EC957E85168ABA9E8B /* Pods_MedeeView_Lab_MedeeView_LabUITests.framework */,
+				D2DF2281950DA5B6F223C996 /* Pods_MedeeView_LabTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A239AEE25B0DE20004F2113 /* WatchConnector */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WatchConnector;
+			sourceTree = "<group>";
+		};
+		8A239AEF25B0DE3B004F2113 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8A239C0425B12586004F2113 /* ColorUtils.swift */,
+				8A239C6125B1301B004F2113 /* ARUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8A239BEE25B12443004F2113 /* MedeeFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A239C2325B12F09004F2113 /* AR-Visual */,
+				8A239BEF25B12465004F2113 /* PulseDetector.swift */,
+				8A239BF625B12471004F2113 /* Filter.swift */,
+				8A239BFD25B1247C004F2113 /* HeartRateManager.swift */,
+			);
+			path = MedeeFrameworks;
+			sourceTree = "<group>";
+		};
+		8A239C2325B12F09004F2113 /* AR-Visual */ = {
+			isa = PBXGroup;
+			children = (
+				8A239C3925B12F84004F2113 /* VideoTexturedFace.shader */,
+				8A239C2B25B12F6F004F2113 /* ARFaceGeometry.obj */,
+				8A239C4525B12FA7004F2113 /* VirtualContent.swift */,
+				8A239C2425B12F57004F2113 /* TransformVisualization.swift */,
+				8A239C4C25B12FC0004F2113 /* TextureFace.swift */,
+				8A239C5325B12FDE004F2113 /* VideoTextureFace.swift */,
+				8A239C5A25B12FF9004F2113 /* BlendShapeCharacter.swift */,
+				8A239C6825B13048004F2113 /* FaceOcclusionOverlay.swift */,
+			);
+			path = "AR-Visual";
+			sourceTree = "<group>";
+		};
+		8AABB17525B0C0A3008F174A = {
+			isa = PBXGroup;
+			children = (
+				8AABB18025B0C0A3008F174A /* MedeeView-Lab */,
+				8AABB19725B0C0A5008F174A /* MedeeView-LabTests */,
+				8AABB1A225B0C0A5008F174A /* MedeeView-LabUITests */,
+				8AABB1AC25B0C0A5008F174A /* MedeeView-Lab WatchKit App */,
+				8AABB1BB25B0C0A5008F174A /* MedeeView-Lab WatchKit Extension */,
+				8AABB17F25B0C0A3008F174A /* Products */,
+				BE167CDCDDB0C950684F4E95 /* Pods */,
+				47B27ABC5F26CC8732EE27F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AABB17F25B0C0A3008F174A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB17E25B0C0A3008F174A /* MedeeView-Lab.app */,
+				8AABB19425B0C0A5008F174A /* MedeeView-LabTests.xctest */,
+				8AABB19F25B0C0A5008F174A /* MedeeView-LabUITests.xctest */,
+				8AABB1A825B0C0A5008F174A /* MedeeView-Lab WatchKit App.app */,
+				8AABB1B725B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AABB18025B0C0A3008F174A /* MedeeView-Lab */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB1E025B0C142008F174A /* App */,
+				8AABB1E225B0C15F008F174A /* Models */,
+				8AABB1E325B0C16B008F174A /* Modules */,
+				8A239BEE25B12443004F2113 /* MedeeFrameworks */,
+				8AABB1E625B0C1AC008F174A /* Extensions */,
+				8A239AEF25B0DE3B004F2113 /* Utilities */,
+				8A239AEE25B0DE20004F2113 /* WatchConnector */,
+				8AABB1E425B0C18A008F174A /* Resources */,
+				8AABB18F25B0C0A5008F174A /* Info.plist */,
+			);
+			path = "MedeeView-Lab";
+			sourceTree = "<group>";
+		};
+		8AABB19725B0C0A5008F174A /* MedeeView-LabTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB19825B0C0A5008F174A /* MedeeView_LabTests.swift */,
+				8AABB19A25B0C0A5008F174A /* Info.plist */,
+			);
+			path = "MedeeView-LabTests";
+			sourceTree = "<group>";
+		};
+		8AABB1A225B0C0A5008F174A /* MedeeView-LabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB1A325B0C0A5008F174A /* MedeeView_LabUITests.swift */,
+				8AABB1A525B0C0A5008F174A /* Info.plist */,
+			);
+			path = "MedeeView-LabUITests";
+			sourceTree = "<group>";
+		};
+		8AABB1AC25B0C0A5008F174A /* MedeeView-Lab WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8A239B6125B118E6004F2113 /* Assets.xcassets */,
+				8AABB1AD25B0C0A5008F174A /* Interface.storyboard */,
+				8AABB1B225B0C0A5008F174A /* Info.plist */,
+			);
+			path = "MedeeView-Lab WatchKit App";
+			sourceTree = "<group>";
+		};
+		8AABB1BB25B0C0A5008F174A /* MedeeView-Lab WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB1BC25B0C0A5008F174A /* InterfaceController.swift */,
+				8AABB1BE25B0C0A5008F174A /* ExtensionDelegate.swift */,
+				8AABB1C025B0C0A5008F174A /* NotificationController.swift */,
+				8AABB1C225B0C0A5008F174A /* ComplicationController.swift */,
+				8AABB1C425B0C0A5008F174A /* Assets.xcassets */,
+				8AABB1C625B0C0A5008F174A /* Info.plist */,
+				8AABB1C725B0C0A5008F174A /* PushNotificationPayload.apns */,
+			);
+			path = "MedeeView-Lab WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8AABB1E025B0C142008F174A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB18125B0C0A3008F174A /* AppDelegate.swift */,
+				8AABB18325B0C0A3008F174A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8AABB1E125B0C150008F174A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB18725B0C0A3008F174A /* Main.storyboard */,
+				8AABB28F25B0C8DD008F174A /* FaceDetect.storyboard */,
+				8AABB29C25B0C904008F174A /* VitalView.storyboard */,
+				8AABB2A925B0C926008F174A /* Dashboard.storyboard */,
+				8AABB35425B0D2EA008F174A /* Settings.storyboard */,
+				8AABB18C25B0C0A5008F174A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AABB1E225B0C15F008F174A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AABB1E325B0C16B008F174A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB1E125B0C150008F174A /* Views */,
+				8AABB1EB25B0C2C5008F174A /* Controllers */,
+				8AABB32C25B0CBC3008F174A /* FaceROI */,
+				8AABB1EA25B0C2B9008F174A /* VitalAnalysis */,
+				8AABB28925B0C87F008F174A /* MachineLearning */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8AABB1E425B0C18A008F174A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A239BAF25B11E9A004F2113 /* empty-blackboard.jpg */,
+				8A239B5125B118C7004F2113 /* appstore.png */,
+				8A239C3225B12F79004F2113 /* Models.scnassets */,
+				8A239B5225B118C7004F2113 /* Assets.xcassets */,
+				8AABB1E525B0C196008F174A /* Library */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AABB1E525B0C196008F174A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		8AABB1E625B0C1AC008F174A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB33425B0CBEA008F174A /* UIExtensions.swift */,
+				8A239BE025B12368004F2113 /* ViewExtensions.swift */,
+				8A239BE725B123D6004F2113 /* AVCaptureDevice+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AABB1E725B0C1CA008F174A /* FaceVitalView */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB2D025B0CA94008F174A /* VitalSignsViewController.swift */,
+				8A239BBD25B122B5004F2113 /* FacePulseViewController.swift */,
+				8A239BC425B122DB004F2113 /* BreathingViewController.swift */,
+			);
+			path = FaceVitalView;
+			sourceTree = "<group>";
+		};
+		8AABB1E825B0C1D5008F174A /* FaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB2B625B0CA2F008F174A /* FaceDetectViewController.swift */,
+				8A239BD225B1232B004F2113 /* FaceTextureViewController.swift */,
+				8A239BD925B12357004F2113 /* EyesRegionsViewController.swift */,
+			);
+			path = FaceDetect;
+			sourceTree = "<group>";
+		};
+		8AABB1EA25B0C2B9008F174A /* VitalAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB2DC25B0CACE008F174A /* HeartRate.swift */,
+				8AABB2E825B0CADD008F174A /* HeartRateVariability.swift */,
+				8AABB2EF25B0CAE8008F174A /* Pulse.swift */,
+				8AABB2F625B0CAF3008F174A /* PulseRateVariability.swift */,
+				8AABB31225B0CB62008F174A /* Breathing.swift */,
+				8AABB31E25B0CB84008F174A /* DeepEye.swift */,
+			);
+			path = VitalAnalysis;
+			sourceTree = "<group>";
+		};
+		8AABB1EB25B0C2C5008F174A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB28825B0C869008F174A /* Dashboard */,
+				8AABB1E825B0C1D5008F174A /* FaceDetect */,
+				8AABB1E725B0C1CA008F174A /* FaceVitalView */,
+				8AABB28725B0C82A008F174A /* FingerPulse */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AABB28725B0C82A008F174A /* FingerPulse */ = {
+			isa = PBXGroup;
+			children = (
+				8A239BB625B122A7004F2113 /* FingerPulseViewController.swift */,
+			);
+			path = FingerPulse;
+			sourceTree = "<group>";
+		};
+		8AABB28825B0C869008F174A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB2C225B0CA44008F174A /* DashboardViewController.swift */,
+				8A239BCB25B12313004F2113 /* HRVanalysisViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		8AABB28925B0C87F008F174A /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB2FD25B0CB18008F174A /* DeepLearning.swift */,
+				8AABB30425B0CB24008F174A /* Training.swift */,
+				8AABB30B25B0CB49008F174A /* CNN.swift */,
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
+		8AABB32C25B0CBC3008F174A /* FaceROI */ = {
+			isa = PBXGroup;
+			children = (
+				8AABB32525B0CBBC008F174A /* FaceROI.swift */,
+				8AABB32D25B0CBD7008F174A /* PreviewView.swift */,
+			);
+			path = FaceROI;
+			sourceTree = "<group>";
+		};
+		BE167CDCDDB0C950684F4E95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9497AEA001466B29AD23A512 /* Pods-MedeeView-Lab.debug.xcconfig */,
+				44CEDCB399D8192E0A0126B5 /* Pods-MedeeView-Lab.release.xcconfig */,
+				2DB6CB9D1649F790C129E37E /* Pods-MedeeView-Lab WatchKit App.debug.xcconfig */,
+				C979D888CD3B265E47A0CE2B /* Pods-MedeeView-Lab WatchKit App.release.xcconfig */,
+				071EBA262BF0E422A1B4DA02 /* Pods-MedeeView-Lab WatchKit Extension.debug.xcconfig */,
+				79C0CB89F7C6876205D62B18 /* Pods-MedeeView-Lab WatchKit Extension.release.xcconfig */,
+				980DD33A4B0A168C91F83F17 /* Pods-MedeeView-Lab-MedeeView-LabUITests.debug.xcconfig */,
+				4CC454E85D3AB9CD1EB8A529 /* Pods-MedeeView-Lab-MedeeView-LabUITests.release.xcconfig */,
+				817CF15A1CF51D9A3FF15FAF /* Pods-MedeeView-LabTests.debug.xcconfig */,
+				0BC68842D339A1BA065A7285 /* Pods-MedeeView-LabTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AABB17D25B0C0A3008F174A /* MedeeView-Lab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AABB1D225B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab" */;
+			buildPhases = (
+				FA29C5C8F9ACEFE6468F8846 /* [CP] Check Pods Manifest.lock */,
+				8AABB17A25B0C0A3008F174A /* Sources */,
+				8AABB17B25B0C0A3008F174A /* Frameworks */,
+				8AABB17C25B0C0A3008F174A /* Resources */,
+				8AABB1D125B0C0A5008F174A /* Embed Watch Content */,
+				D97B616CE4CB7D348A7F860E /* [CP] Embed Pods Frameworks */,
+				B26AC2CDA4D08A3D8D27C527 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AABB1AB25B0C0A5008F174A /* PBXTargetDependency */,
+			);
+			name = "MedeeView-Lab";
+			productName = "MedeeView-Lab";
+			productReference = 8AABB17E25B0C0A3008F174A /* MedeeView-Lab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AABB19325B0C0A5008F174A /* MedeeView-LabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AABB1D525B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-LabTests" */;
+			buildPhases = (
+				5F107FFFBF61113162E8DF70 /* [CP] Check Pods Manifest.lock */,
+				8AABB19025B0C0A5008F174A /* Sources */,
+				8AABB19125B0C0A5008F174A /* Frameworks */,
+				8AABB19225B0C0A5008F174A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AABB19625B0C0A5008F174A /* PBXTargetDependency */,
+			);
+			name = "MedeeView-LabTests";
+			productName = "MedeeView-LabTests";
+			productReference = 8AABB19425B0C0A5008F174A /* MedeeView-LabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AABB19E25B0C0A5008F174A /* MedeeView-LabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AABB1D825B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-LabUITests" */;
+			buildPhases = (
+				039F8BA4BAAEA1B0E4E4207C /* [CP] Check Pods Manifest.lock */,
+				8AABB19B25B0C0A5008F174A /* Sources */,
+				8AABB19C25B0C0A5008F174A /* Frameworks */,
+				8AABB19D25B0C0A5008F174A /* Resources */,
+				08CA0AE3BB8BD6D09F27EF71 /* [CP] Embed Pods Frameworks */,
+				84C9B04CCA219C4C90CDFAB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AABB1A125B0C0A5008F174A /* PBXTargetDependency */,
+			);
+			name = "MedeeView-LabUITests";
+			productName = "MedeeView-LabUITests";
+			productReference = 8AABB19F25B0C0A5008F174A /* MedeeView-LabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8AABB1A725B0C0A5008F174A /* MedeeView-Lab WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AABB1CE25B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab WatchKit App" */;
+			buildPhases = (
+				F57CAD384D671CF247BE796B /* [CP] Check Pods Manifest.lock */,
+				8AABB1A625B0C0A5008F174A /* Resources */,
+				8AABB1CD25B0C0A5008F174A /* Embed App Extensions */,
+				70EAFE6093B68553B0834FD9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AABB1BA25B0C0A5008F174A /* PBXTargetDependency */,
+			);
+			name = "MedeeView-Lab WatchKit App";
+			productName = "MedeeView-Lab WatchKit App";
+			productReference = 8AABB1A825B0C0A5008F174A /* MedeeView-Lab WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8AABB1B625B0C0A5008F174A /* MedeeView-Lab WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AABB1CA25B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab WatchKit Extension" */;
+			buildPhases = (
+				C45E66D863DAD5626845847B /* [CP] Check Pods Manifest.lock */,
+				8AABB1B325B0C0A5008F174A /* Sources */,
+				8AABB1B425B0C0A5008F174A /* Frameworks */,
+				8AABB1B525B0C0A5008F174A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MedeeView-Lab WatchKit Extension";
+			productName = "MedeeView-Lab WatchKit Extension";
+			productReference = 8AABB1B725B0C0A5008F174A /* MedeeView-Lab WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AABB17625B0C0A3008F174A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8AABB17D25B0C0A3008F174A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8AABB19325B0C0A5008F174A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8AABB17D25B0C0A3008F174A;
+					};
+					8AABB19E25B0C0A5008F174A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8AABB17D25B0C0A3008F174A;
+					};
+					8AABB1A725B0C0A5008F174A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8AABB1B625B0C0A5008F174A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 8AABB17925B0C0A3008F174A /* Build configuration list for PBXProject "MedeeView-Lab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AABB17525B0C0A3008F174A;
+			productRefGroup = 8AABB17F25B0C0A3008F174A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AABB17D25B0C0A3008F174A /* MedeeView-Lab */,
+				8AABB19325B0C0A5008F174A /* MedeeView-LabTests */,
+				8AABB19E25B0C0A5008F174A /* MedeeView-LabUITests */,
+				8AABB1A725B0C0A5008F174A /* MedeeView-Lab WatchKit App */,
+				8AABB1B625B0C0A5008F174A /* MedeeView-Lab WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AABB17C25B0C0A3008F174A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AABB29D25B0C904008F174A /* VitalView.storyboard in Resources */,
+				8AABB29025B0C8DD008F174A /* FaceDetect.storyboard in Resources */,
+				8A239BB025B11E9A004F2113 /* empty-blackboard.jpg in Resources */,
+				8AABB2AA25B0C926008F174A /* Dashboard.storyboard in Resources */,
+				8AABB18E25B0C0A5008F174A /* LaunchScreen.storyboard in Resources */,
+				8A239C2C25B12F6F004F2113 /* ARFaceGeometry.obj in Resources */,
+				8AABB35525B0D2EA008F174A /* Settings.storyboard in Resources */,
+				8A239B5325B118C7004F2113 /* appstore.png in Resources */,
+				8A239B5525B118C7004F2113 /* Assets.xcassets in Resources */,
+				8A239C3325B12F79004F2113 /* Models.scnassets in Resources */,
+				8A239B6225B118E6004F2113 /* Assets.xcassets in Resources */,
+				8AABB18925B0C0A3008F174A /* Main.storyboard in Resources */,
+				8A239C3A25B12F84004F2113 /* VideoTexturedFace.shader in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19225B0C0A5008F174A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19D25B0C0A5008F174A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB1A625B0C0A5008F174A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A239B5425B118C7004F2113 /* appstore.png in Resources */,
+				8A239B5625B118C7004F2113 /* Assets.xcassets in Resources */,
+				8A239B6325B118E6004F2113 /* Assets.xcassets in Resources */,
+				8AABB1AF25B0C0A5008F174A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB1B525B0C0A5008F174A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AABB1C525B0C0A5008F174A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		039F8BA4BAAEA1B0E4E4207C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedeeView-Lab-MedeeView-LabUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08CA0AE3BB8BD6D09F27EF71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F107FFFBF61113162E8DF70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedeeView-LabTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C9B04CCA219C4C90CDFAB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab-MedeeView-LabUITests/Pods-MedeeView-Lab-MedeeView-LabUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26AC2CDA4D08A3D8D27C527 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C45E66D863DAD5626845847B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedeeView-Lab WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97B616CE4CB7D348A7F860E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedeeView-Lab/Pods-MedeeView-Lab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57CAD384D671CF247BE796B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedeeView-Lab WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA29C5C8F9ACEFE6468F8846 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedeeView-Lab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AABB17A25B0C0A3008F174A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A239BE825B123D6004F2113 /* AVCaptureDevice+Extensions.swift in Sources */,
+				8A239C6925B13048004F2113 /* FaceOcclusionOverlay.swift in Sources */,
+				8A239C2525B12F57004F2113 /* TransformVisualization.swift in Sources */,
+				8AABB2D125B0CA94008F174A /* VitalSignsViewController.swift in Sources */,
+				8AABB30C25B0CB49008F174A /* CNN.swift in Sources */,
+				8A239C6225B1301B004F2113 /* ARUtils.swift in Sources */,
+				8AABB2B725B0CA2F008F174A /* FaceDetectViewController.swift in Sources */,
+				8AABB2DD25B0CACE008F174A /* HeartRate.swift in Sources */,
+				8AABB2C325B0CA44008F174A /* DashboardViewController.swift in Sources */,
+				8A239BFE25B1247C004F2113 /* HeartRateManager.swift in Sources */,
+				8AABB2E925B0CADD008F174A /* HeartRateVariability.swift in Sources */,
+				8A239BC525B122DB004F2113 /* BreathingViewController.swift in Sources */,
+				8A239BF025B12465004F2113 /* PulseDetector.swift in Sources */,
+				8AABB18225B0C0A3008F174A /* AppDelegate.swift in Sources */,
+				8A239C4D25B12FC0004F2113 /* TextureFace.swift in Sources */,
+				8AABB31F25B0CB84008F174A /* DeepEye.swift in Sources */,
+				8A239C4625B12FA7004F2113 /* VirtualContent.swift in Sources */,
+				8AABB30525B0CB24008F174A /* Training.swift in Sources */,
+				8AABB33525B0CBEA008F174A /* UIExtensions.swift in Sources */,
+				8A239BB725B122A7004F2113 /* FingerPulseViewController.swift in Sources */,
+				8AABB32E25B0CBD7008F174A /* PreviewView.swift in Sources */,
+				8A239BDA25B12357004F2113 /* EyesRegionsViewController.swift in Sources */,
+				8AABB18425B0C0A3008F174A /* SceneDelegate.swift in Sources */,
+				8AABB32625B0CBBC008F174A /* FaceROI.swift in Sources */,
+				8A239BBE25B122B5004F2113 /* FacePulseViewController.swift in Sources */,
+				8A239C0525B12586004F2113 /* ColorUtils.swift in Sources */,
+				8A239BE125B12368004F2113 /* ViewExtensions.swift in Sources */,
+				8A239C5425B12FDE004F2113 /* VideoTextureFace.swift in Sources */,
+				8A239BF725B12471004F2113 /* Filter.swift in Sources */,
+				8A239C5B25B12FF9004F2113 /* BlendShapeCharacter.swift in Sources */,
+				8AABB2F025B0CAE8008F174A /* Pulse.swift in Sources */,
+				8A239BD325B1232B004F2113 /* FaceTextureViewController.swift in Sources */,
+				8AABB2F725B0CAF3008F174A /* PulseRateVariability.swift in Sources */,
+				8AABB2FE25B0CB18008F174A /* DeepLearning.swift in Sources */,
+				8AABB31325B0CB62008F174A /* Breathing.swift in Sources */,
+				8A239BCC25B12313004F2113 /* HRVanalysisViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19025B0C0A5008F174A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AABB19925B0C0A5008F174A /* MedeeView_LabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB19B25B0C0A5008F174A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AABB1A425B0C0A5008F174A /* MedeeView_LabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AABB1B325B0C0A5008F174A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AABB1C125B0C0A5008F174A /* NotificationController.swift in Sources */,
+				8AABB1C325B0C0A5008F174A /* ComplicationController.swift in Sources */,
+				8AABB1BF25B0C0A5008F174A /* ExtensionDelegate.swift in Sources */,
+				8AABB1BD25B0C0A5008F174A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AABB19625B0C0A5008F174A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AABB17D25B0C0A3008F174A /* MedeeView-Lab */;
+			targetProxy = 8AABB19525B0C0A5008F174A /* PBXContainerItemProxy */;
+		};
+		8AABB1A125B0C0A5008F174A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AABB17D25B0C0A3008F174A /* MedeeView-Lab */;
+			targetProxy = 8AABB1A025B0C0A5008F174A /* PBXContainerItemProxy */;
+		};
+		8AABB1AB25B0C0A5008F174A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AABB1A725B0C0A5008F174A /* MedeeView-Lab WatchKit App */;
+			targetProxy = 8AABB1AA25B0C0A5008F174A /* PBXContainerItemProxy */;
+		};
+		8AABB1BA25B0C0A5008F174A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AABB1B625B0C0A5008F174A /* MedeeView-Lab WatchKit Extension */;
+			targetProxy = 8AABB1B925B0C0A5008F174A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AABB18725B0C0A3008F174A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AABB18825B0C0A3008F174A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AABB18C25B0C0A5008F174A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AABB18D25B0C0A5008F174A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AABB1AD25B0C0A5008F174A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AABB1AE25B0C0A5008F174A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AABB1C825B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AABB1C925B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8AABB1CB25B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071EBA262BF0E422A1B4DA02 /* Pods-MedeeView-Lab WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-Lab WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		8AABB1CC25B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C0CB89F7C6876205D62B18 /* Pods-MedeeView-Lab WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-Lab WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		8AABB1CF25B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB6CB9D1649F790C129E37E /* Pods-MedeeView-Lab WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				IBSC_MODULE = MedeeView_Lab_WatchKit_Extension;
+				INFOPLIST_FILE = "MedeeView-Lab WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		8AABB1D025B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C979D888CD3B265E47A0CE2B /* Pods-MedeeView-Lab WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				IBSC_MODULE = MedeeView_Lab_WatchKit_Extension;
+				INFOPLIST_FILE = "MedeeView-Lab WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		8AABB1D325B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9497AEA001466B29AD23A512 /* Pods-MedeeView-Lab.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-Lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AABB1D425B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CEDCB399D8192E0A0126B5 /* Pods-MedeeView-Lab.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-Lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-Lab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AABB1D625B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817CF15A1CF51D9A3FF15FAF /* Pods-MedeeView-LabTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-LabTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-LabTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedeeView-Lab.app/MedeeView-Lab";
+			};
+			name = Debug;
+		};
+		8AABB1D725B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC68842D339A1BA065A7285 /* Pods-MedeeView-LabTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-LabTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-LabTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedeeView-Lab.app/MedeeView-Lab";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AABB1D925B0C0A5008F174A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980DD33A4B0A168C91F83F17 /* Pods-MedeeView-Lab-MedeeView-LabUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-LabUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-LabUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MedeeView-Lab";
+			};
+			name = Debug;
+		};
+		8AABB1DA25B0C0A5008F174A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC454E85D3AB9CD1EB8A529 /* Pods-MedeeView-Lab-MedeeView-LabUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C39N2S4ZKJ;
+				INFOPLIST_FILE = "MedeeView-LabUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nothing2say.develop.MedeeView-LabUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MedeeView-Lab";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AABB17925B0C0A3008F174A /* Build configuration list for PBXProject "MedeeView-Lab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1C825B0C0A5008F174A /* Debug */,
+				8AABB1C925B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AABB1CA25B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1CB25B0C0A5008F174A /* Debug */,
+				8AABB1CC25B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AABB1CE25B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1CF25B0C0A5008F174A /* Debug */,
+				8AABB1D025B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AABB1D225B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-Lab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1D325B0C0A5008F174A /* Debug */,
+				8AABB1D425B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AABB1D525B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-LabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1D625B0C0A5008F174A /* Debug */,
+				8AABB1D725B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AABB1D825B0C0A5008F174A /* Build configuration list for PBXNativeTarget "MedeeView-LabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AABB1D925B0C0A5008F174A /* Debug */,
+				8AABB1DA25B0C0A5008F174A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AABB17625B0C0A3008F174A /* Project object */;
+}
